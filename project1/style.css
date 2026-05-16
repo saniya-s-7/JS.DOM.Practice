@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    padding: 15px 50px;
+    border-radius: 50px;
+    border: none;
+    background: #34e8d9;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    color: rgba(68, 87, 95, 0.806);
+    position: relative;
+    z-index: 100;
+}
+
+button:active{
+    transform: scale(0.92);
+    transition: 0.3s;
+}
