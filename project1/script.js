@@ -6,16 +6,19 @@ let h2 = document.querySelector('#bottom h2')
 btn.addEventListener('click', ()=>{
     
     btn.style.pointerEvents ='none'
+    
+    let num = 50 + Math.floor(Math.random()*50) 
 
     let int = setInterval(() => {
         grow++
         h2.innerHTML = grow + '%'
         inner.style.width = grow + '%'
-    }, 30);
+    }, num);
 
     setTimeout(() => {
         clearInterval(int)
         btn.innerHTML = 'Downloaded'
         btn.style.opacity = '0.5'
-    },  3000);
+        console.log('Your file is Downloaded in',num/10,'Seconds')
+    },  num*100);
 })
